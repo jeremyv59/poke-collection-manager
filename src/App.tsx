@@ -1,12 +1,14 @@
 import React from "react";
-import GlobalStyles from "./global/GlobalStyles";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles";
+import { theme } from "./styles/Theme";
 
 const App: React.FC = () => {
   return (
-    <React.Fragment>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <h1>App React</h1>
-    </React.Fragment>
+    </ThemeProvider>
   );
 };
 

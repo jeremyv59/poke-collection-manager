@@ -1,13 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import { ThemeType } from "./Theme";
 
-export const colors = {
-  indigo: "#3949ab",
-  orange: "#ffb300",
-};
-
-export const transitionEffect = "all 250ms ease-in";
-
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<ThemeType>`
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
 
   * {
@@ -21,8 +15,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #ffffff;
+    background-color:${({ theme }) => theme.colors.white};
     font-family: Poppins, sans-serif;
+    min-height : 100vh;
   }
 `;
 
