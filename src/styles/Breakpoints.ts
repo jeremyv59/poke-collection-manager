@@ -3,9 +3,9 @@ const size = {
   mobileM: "375px",
   mobileL: "425px",
   tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
+  laptop: "992px",
+  laptopL: "1200px",
+  desktop: "1600px",
 };
 
 export const device = {

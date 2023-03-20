@@ -1,18 +1,18 @@
 import React from "react";
 import { Layout, Menu } from "antd";
-import { SidebarHeader, SidebarLogo } from "./sidebar_styled";
-import logo from "../../assets/Pokemon.jpg";
+import { SidebarHeader, HeaderIcon, HeaderTxt } from "./sidebar_styled";
 
 const Sidebar: React.FC = () => {
   return (
     <Layout.Sider
       collapsible
-      breakpoint={"lg"}
+      breakpoint={"xl"}
       collapsedWidth={80}
       trigger={null}
     >
       <SidebarHeader>
-        <SidebarLogo src={logo} />
+        <HeaderIcon />
+        <HeaderTxt>Poke Manager</HeaderTxt>
       </SidebarHeader>
       <Menu defaultSelectedKeys={["1"]} mode="inline" />
     </Layout.Sider>
