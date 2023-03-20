@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 import { SidebarHeader, SidebarLogo } from "./sidebar_styled";
-// import logo from "../../assets/Pokemon.jpg";
+import logo from "../../assets/Pokemon.jpg";
 
 const Sidebar: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
       trigger={null}
     >
       <SidebarHeader>
-        <SidebarLogo />
+        <SidebarLogo src={logo} />
       </SidebarHeader>
       <Menu defaultSelectedKeys={["1"]} mode="inline" />
     </Layout.Sider>
