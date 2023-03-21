@@ -33,7 +33,12 @@ export const HeaderTxt = styled.p`
   &:after {
     content: "";
     display: block;
-    width: 60%;
+    width: 100%;
     padding-top: 3px;
     border-bottom: 2px solid white;
+
+    @media ${device.laptopL} {
+      width: 60%;
+    }
+  }
 `;
