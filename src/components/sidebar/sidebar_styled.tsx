@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { AntDesignOutlined } from "@ant-design/icons";
 import { device } from "../../styles/Breakpoints";
+import { Menu } from "antd";
 
 export const SidebarHeader = styled.div`
   display: flex;
@@ -40,5 +41,16 @@ export const HeaderTxt = styled.p`
     @media ${device.laptopL} {
       width: 60%;
     }
+  }
+`;
+
+export const SidebarMenu = styled(Menu)`
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .ant-menu-item {
+    color: green;
   }
 `;

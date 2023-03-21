@@ -1,6 +1,12 @@
 import React from "react";
-import { Layout, Menu } from "antd";
-import { SidebarHeader, HeaderIcon, HeaderTxt } from "./sidebar_styled";
+import { Layout } from "antd";
+import {
+  SidebarHeader,
+  HeaderIcon,
+  HeaderTxt,
+  SidebarMenu,
+} from "./sidebar_styled";
+import { items } from "../../constants/menuItems";
 
 const Sidebar: React.FC = () => {
   return (
@@ -14,7 +20,7 @@ const Sidebar: React.FC = () => {
         <HeaderIcon />
         <HeaderTxt>Poke Manager</HeaderTxt>
       </SidebarHeader>
-      <Menu defaultSelectedKeys={["1"]} mode="inline" />
+      <SidebarMenu items={items} defaultSelectedKeys={["1"]} mode="inline" />
     </Layout.Sider>
   );
 };
