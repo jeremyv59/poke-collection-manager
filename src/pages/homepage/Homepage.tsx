@@ -1,13 +1,13 @@
 import React from "react";
 import { Breadcrumb, Layout } from "antd";
-import { DashboardLayout } from "./dashboard_styled";
-import Sidebar from "../sidebar/Sidebar";
+import { HomepageLayout } from "./homepage_styled";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 const { Header, Content } = Layout;
 
-const Dashboard = () => {
+const Homepage = () => {
   return (
-    <DashboardLayout>
+    <HomepageLayout>
       <Sidebar />
       <Layout className="site-layout">
         <Header style={{ padding: 0, background: "blue", width: "70%" }} />
@@ -27,8 +27,8 @@ const Dashboard = () => {
           </div>
         </Content>
       </Layout>
-    </DashboardLayout>
+    </HomepageLayout>
   );
 };
 
-export default Dashboard;
+export default Homepage;
