@@ -4,10 +4,10 @@ export type ThemeType = {
 
 export const theme = {
   colors: {
-    primary: "#3949ab",
+    purple: "#6F4EF2",
     secondary: "#ffb300",
     gray : "#7A86A1",
-    black: "#000000",
+    dark: "#24293E",
     white: "#ffffff",
     success: "#66A15A",
   },
