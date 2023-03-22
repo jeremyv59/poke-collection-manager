@@ -7,6 +7,7 @@ import {
   SidebarMenu,
 } from "./sidebar_styled";
 import { items } from "../../constants/menuItems";
+import { theme } from "../../styles/Theme";
 
 const Sidebar: React.FC = () => {
   return (
@@ -15,12 +16,22 @@ const Sidebar: React.FC = () => {
       breakpoint={"xl"}
       collapsedWidth={80}
       trigger={null}
+      style={{ background: theme.colors.dark }}
     >
       <SidebarHeader>
         <HeaderIcon />
         <HeaderTxt>Poke Manager</HeaderTxt>
       </SidebarHeader>
-      <SidebarMenu items={items} defaultSelectedKeys={["1"]} mode="inline" />
+      <SidebarMenu
+        direction="ltr"
+        items={items.map((item, index) => ({
+          key: item.key,
+          icon: item.icon,
+          label: item.label,
+        }))}
+        defaultSelectedKeys={["1"]}
+        mode="inline"
+      />
     </Layout.Sider>
   );
 };

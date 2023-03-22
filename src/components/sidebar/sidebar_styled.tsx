@@ -45,12 +45,28 @@ export const HeaderTxt = styled.p`
 `;
 
 export const SidebarMenu = styled(Menu)`
-  height: 23%;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
 
   .ant-menu-item {
-    color: green;
+    color: ${({ theme }) => theme.colors.gray};
+    font-weight: 500;
+    border-radius: 2.5rem;
+    margin: 0rem !important;
+  }
+
+  && .ant-menu-item:hover {
+    color: ${({ theme }) => theme.colors.white} !important;
+    background: transparent !important;
+  }
+
+  .ant-menu-item-selected,
+  && .ant-menu-item-selected:hover {
+    background-color: ${({ theme }) => theme.colors.purple} !important;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
