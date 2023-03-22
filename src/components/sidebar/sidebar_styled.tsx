@@ -45,7 +45,7 @@ export const HeaderTxt = styled.p`
 `;
 
 export const SidebarMenu = styled(Menu)`
-  height: 20%;
+  height: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
