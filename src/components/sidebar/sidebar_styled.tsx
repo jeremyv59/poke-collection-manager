@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { AntDesignOutlined } from "@ant-design/icons";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { BsInfoCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
 import { device } from "../../styles/Breakpoints";
 import { Menu } from "antd";
 
@@ -79,10 +79,88 @@ export const GuidenceContainer = styled.div`
   bottom: 10%;
   left: 25%;
   right: 25%;
+
+  @media ${device.laptopL} {
+    width: 80%;
+    left: 10%;
+    background-color: ${({ theme }) => theme.colors.darkPurple};
+    flex-direction: column;
+    border-radius: 1.5rem;
+    align-items: center;
+  }
+`;
+
+export const InfoIconContainer = styled.div`
+  display: block;
+
+  @media ${device.laptopL} {
+    position: absolute;
+    top: -1.2rem;
+    padding: 0.4rem 0.5rem;
+    background: ${({ theme }) => theme.colors.darkPurple};
+    border-color: transparent;
+    border-radius: 2rem;
+  }
 `;
 
 export const IconInfo = styled(BsInfoCircleFill)`
   color: ${({ theme }) => theme.colors.purple};
   background: transparent;
   font-size: 1.5rem;
+
+  @media ${device.laptopL} {
+    font-size: 1.8rem;
+    border: 5px solid ${({ theme }) => theme.colors.dark};
+    border-radius: 2rem;
+  }
+`;
+
+export const GuidenceTitle = styled.p`
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: ${({ theme }) => theme.colors.white};
+  display: none;
+
+  @media ${device.laptopL} {
+    display: block;
+  }
+`;
+
+export const GuidenceDesc = styled.span`
+  color: ${({ theme }) => theme.colors.gray};
+  font-size: 0.6rem;
+  text-align: center;
+  display: none;
+  font-weight: 400;
+  margin: 0.5rem 1.8rem 0.6875rem;
+  line-height: 150%;
+  opacity: 0.6;
+
+  @media ${device.laptopL} {
+    display: block;
+  }
+`;
+
+export const GuidenceButton = styled.button`
+  width: 75%;
+  background-color: ${({ theme }) => theme.colors.dark};
+  cursor: pointer;
+  display: none;
+  border-radius: 1.25rem;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  margin-bottom: 1.3rem;
+
+  @media ${device.laptopL} {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+`;
+
+export const IconPlay = styled(BsFillPlayCircleFill)`
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.colors.white};
 `;
