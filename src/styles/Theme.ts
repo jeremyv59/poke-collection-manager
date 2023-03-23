@@ -5,6 +5,7 @@ export type ThemeType = {
 export const theme = {
   colors: {
     purple: "#6F4EF2",
+    darkPurple : "#32305E",
     gray : "#7A86A1",
     dark: "#24293E",
     white: "#ffffff",

@@ -5,6 +5,8 @@ import {
   HeaderIcon,
   HeaderTxt,
   SidebarMenu,
+  GuidenceContainer,
+  IconInfo,
 } from "./sidebar_styled";
 import { items } from "../../constants/menuItems";
 import { theme } from "../../styles/Theme";
@@ -16,14 +18,13 @@ const Sidebar: React.FC = () => {
       breakpoint={"xl"}
       collapsedWidth={80}
       trigger={null}
-      style={{ background: theme.colors.dark }}
+      style={{ background: theme.colors.dark, position: "relative" }}
     >
       <SidebarHeader>
         <HeaderIcon />
         <HeaderTxt>Poke Manager</HeaderTxt>
       </SidebarHeader>
       <SidebarMenu
-        direction="ltr"
         items={items.map((item, index) => ({
           key: item.key,
           icon: item.icon,
@@ -32,6 +33,9 @@ const Sidebar: React.FC = () => {
         defaultSelectedKeys={["1"]}
         mode="inline"
       />
+      <GuidenceContainer>
+        <IconInfo />
+      </GuidenceContainer>
     </Layout.Sider>
   );
 };

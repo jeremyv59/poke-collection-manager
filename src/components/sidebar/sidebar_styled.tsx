@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AntDesignOutlined } from "@ant-design/icons";
+import { BsInfoCircleFill } from "react-icons/bs";
 import { device } from "../../styles/Breakpoints";
 import { Menu } from "antd";
 
@@ -69,4 +70,19 @@ export const SidebarMenu = styled(Menu)`
     background-color: ${({ theme }) => theme.colors.purple} !important;
     color: ${({ theme }) => theme.colors.white};
   }
+`;
+
+export const GuidenceContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  right: 25%;
+`;
+
+export const IconInfo = styled(BsInfoCircleFill)`
+  color: ${({ theme }) => theme.colors.purple};
+  background: transparent;
+  font-size: 1.5rem;
 `;
