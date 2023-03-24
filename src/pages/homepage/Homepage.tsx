@@ -1,14 +1,12 @@
 import React from "react";
 import { Breadcrumb, Layout } from "antd";
 import { HomepageLayout } from "./homepage_styled";
-import Sidebar from "../../components/sidebar/Sidebar";
 
 const { Header, Content } = Layout;
 
 const Homepage = () => {
   return (
     <HomepageLayout>
-      <Sidebar />
       <Layout className="site-layout">
         <Header style={{ padding: 0, background: "blue", width: "70%" }} />
         <Content style={{ margin: "0 16px" }}>

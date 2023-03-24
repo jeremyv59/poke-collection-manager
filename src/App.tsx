@@ -1,14 +1,23 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import Homepage from "./pages/homepage/Homepage";
+import styled, { ThemeProvider } from "styled-components";
+import Sidebar from "./components/sidebar/Sidebar";
 import GlobalStyles from "./styles/GlobalStyles";
 import { theme } from "./styles/Theme";
+
+const AppContainer = styled.div`
+  background-color: red;
+  min-height: 100vh;
+`;
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Homepage />
+      <AppContainer>
+        <Sidebar />
+      </AppContainer>
+      {/* <Homepage /> */}
+      {/* <p>Salut les copains</p> */}
     </ThemeProvider>
   );
 };

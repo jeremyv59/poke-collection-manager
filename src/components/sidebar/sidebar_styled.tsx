@@ -2,12 +2,19 @@ import styled from "styled-components";
 import { AntDesignOutlined } from "@ant-design/icons";
 import { BsInfoCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
 import { device } from "../../styles/Breakpoints";
-import { Menu } from "antd";
+import { Layout, Menu } from "antd";
+
+export const SidebarLayout = styled(Layout.Sider)`
+  min-height: 100vh;
+  padding-top: 1.5rem;
+  background: ${({ theme }) => theme.colors.dark};
+  position: relative;
+`;
 
 export const SidebarHeader = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1.5rem 0.5rem 2.8rem;
+  margin-bottom: 2.5rem;
   align-items: center;
   justify-content: center;
 
@@ -117,11 +124,12 @@ export const IconInfo = styled(BsInfoCircleFill)`
 `;
 
 export const GuidenceTitle = styled.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   color: ${({ theme }) => theme.colors.white};
   display: none;
+  text-align: center;
 
   @media ${device.laptopL} {
     display: block;
@@ -133,8 +141,7 @@ export const GuidenceDesc = styled.span`
   font-size: 0.6rem;
   text-align: center;
   display: none;
-  font-weight: 400;
-  margin: 0.5rem 1.8rem 0.6875rem;
+  margin: 0.4rem 1.4rem 0.6875rem;
   line-height: 150%;
   opacity: 0.6;
 
