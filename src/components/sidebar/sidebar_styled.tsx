@@ -69,6 +69,7 @@ export const SidebarMenu = styled(Menu)`
   && .ant-menu-item-selected:hover {
     background-color: ${({ theme }) => theme.colors.purple} !important;
     color: ${({ theme }) => theme.colors.white};
+    transition: background-color 0.5s linear;
   }
 `;
 
