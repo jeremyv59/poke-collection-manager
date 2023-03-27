@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   SidebarHeader,
   HeaderIcon,
@@ -14,10 +14,18 @@ import {
   SidebarLayout,
 } from "./sidebar_styled";
 import { items } from "../../constants/menuItems";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar: React.FC = () => {
+  const navigate = useNavigate();
+
+  const onClickItem = (key: string) => {
+    navigate(key);
+  };
+
   return (
     <SidebarLayout
+      width={"10%"}
       collapsible
       breakpoint={"xl"}
       collapsedWidth={80}
@@ -28,12 +36,13 @@ const Sidebar: React.FC = () => {
         <HeaderTxt>Poke Manager</HeaderTxt>
       </SidebarHeader>
       <SidebarMenu
+        onClick={({ key }) => onClickItem(key)}
         items={items.map((item, index) => ({
           key: item.key,
           icon: item.icon,
           label: item.label,
         }))}
-        defaultSelectedKeys={["1"]}
+        defaultSelectedKeys={[window.location.pathname]}
         mode="inline"
       />
       <GuidenceContainer>
@@ -52,4 +61,4 @@ const Sidebar: React.FC = () => {
     </SidebarLayout>
   );
 };
-export default Sidebar;
+export default memo(Sidebar);

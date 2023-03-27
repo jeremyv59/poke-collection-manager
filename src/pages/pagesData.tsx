@@ -5,17 +5,17 @@ import Cards from "./Cards";
 
 const pagesData: routerType[] = [
   {
-    path: "",
+    path: "/",
     element: <Homepage />,
     title: "homepage",
   },
   {
-    path: "collection",
+    path: "/collection",
     element: <Collection />,
     title: "collection",
   },
   {
-    path: "cards",
+    path: "/cards",
     element: <Cards />,
     title: "cards",
   },

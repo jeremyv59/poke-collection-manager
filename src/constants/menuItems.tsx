@@ -11,17 +11,17 @@ type MenuItemType = {
 export const items: MenuItemType[] = [
   {
     label: "Home",
-    key: "1",
+    key: "/",
     icon: <AiOutlineHome />,
   },
   {
     label: "Collection",
-    key: "2",
+    key: "/collection",
     icon: <AiOutlineBook />,
   },
   {
     label: "Cards",
-    key: "3",
+    key: "/cards",
     icon: <CgCardHearts />,
   },
   {
