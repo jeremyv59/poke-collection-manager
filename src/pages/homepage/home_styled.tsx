@@ -24,19 +24,23 @@ export const CustomHeader = styled.span`
 
   @media ${device.tablet} {
     position: absolute;
+    padding: 0;
     margin: auto;
     left: 0;
     right: 0;
     top: 2rem;
+    width: 97%;
   }
 
   h1 {
+    background: yellow;
     font-size: 250%;
     font-weight: 600;
-    line-height: 55px;
+    line-height: 40px;
   }
 
   text {
+    background: green;
     font-size: 112.5%;
     color: ${({ theme }) => theme.colors.gray};
     line-height: 25px;
