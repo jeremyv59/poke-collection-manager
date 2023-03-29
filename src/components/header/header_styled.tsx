@@ -13,6 +13,18 @@ export const CustomHeader = styled.div`
   background: ${({ theme }) => theme.colors.darkSecondary};
  
 
+  h1 {
+    font-size: 250%;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  text {
+    font-size: 112.5%;
+    color: ${({ theme }) => theme.colors.gray};
+    line-height: 25px;
+  }
+  
   @media ${device.tablet} {
     position: absolute;
     padding: 0;
@@ -25,17 +37,7 @@ export const CustomHeader = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-  h1 {
-    font-size: 250%;
-    font-weight: 600;
-    line-height: 40px;
-  }
 
-  text {
-    font-size: 112.5%;
-    color: ${({ theme }) => theme.colors.gray};
-    line-height: 25px;
-  }
 `;
 
 export const OptionsContainer = styled.div`
