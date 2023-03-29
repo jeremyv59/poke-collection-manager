@@ -1,6 +1,11 @@
 import React from "react";
 import { Breadcrumb, Layout } from "antd";
-import { HomepageLayout, MainContainer, RightContainer } from "./home_styled";
+import {
+  CustomHeader,
+  HomepageLayout,
+  MainContainer,
+  RightContainer,
+} from "./home_styled";
 
 const { Header, Content } = Layout;
 
@@ -16,7 +21,11 @@ const Homepage = () => {
           alignSelf: "center",
         }}
       /> */}
-      <MainContainer>Main Container</MainContainer>
+      <CustomHeader />
+      <MainContainer>
+        Main Container Main Container Main Container Main Container Main
+        Container Main Container Main ContainerMain Container
+      </MainContainer>
 
       <RightContainer>Right Container</RightContainer>
       {/* <Layout className="site-layout">
