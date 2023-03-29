@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
 import { CgProfile } from "react-icons/cg";
+import { FiMenu } from "react-icons/fi";
 
 export const CustomHeader = styled.div`
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   width: 100%;
-  align-self: center;
+  align-items: center;
   color: white;
   background: ${({ theme }) => theme.colors.darkSecondary};
  
@@ -19,6 +20,7 @@ export const CustomHeader = styled.div`
     left: 0;
     right: 0;
     top: 1.5rem;
+    background: transparent;
     width: 97%;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +41,7 @@ export const CustomHeader = styled.div`
 export const OptionsContainer = styled.div`
   display: none;
 
-  @media ${device.tablet} {
+  @media ${device.laptopL} {
     display: flex;
     gap: 1.1rem;
   }
@@ -58,6 +60,14 @@ export const IconContainer = styled.div`
 
   .icon {
     color: white;
+  }
+`;
+
+export const MenuIcon = styled(FiMenu)`
+  color: white;
+
+  @media ${device.laptopL} {
+    display: none;
   }
 `;
 

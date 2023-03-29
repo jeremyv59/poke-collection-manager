@@ -7,6 +7,7 @@ import {
   UserDescContainer,
   Status,
   ProfileIcon,
+  MenuIcon,
 } from "./header_styled";
 import { FiSettings } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -33,6 +34,7 @@ const Header = () => {
           <ProfileIcon />
         </UserContainer>
       </OptionsContainer>
+      <MenuIcon className="icon" size={"1.5rem"} />
     </CustomHeader>
   );
 };
