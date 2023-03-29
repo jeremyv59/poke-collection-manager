@@ -1,5 +1,4 @@
 import React from "react";
-import { Breadcrumb, Layout } from "antd";
 import {
   CustomHeader,
   HomepageLayout,
@@ -7,21 +6,13 @@ import {
   RightContainer,
 } from "./home_styled";
 
-const { Header, Content } = Layout;
-
 const Homepage = () => {
   return (
     <HomepageLayout>
-      {/* <Header
-        style={{
-          marginTop: "1.6rem",
-          display: "flex",
-          background: "blue",
-          width: "95%",
-          alignSelf: "center",
-        }}
-      /> */}
-      <CustomHeader />
+      <CustomHeader>
+        <h1>Home</h1>
+        <text>Hello Jérémy, welcome back !</text>
+      </CustomHeader>
       <MainContainer>
         Main Container Main Container Main Container Main Container Main
         Container Main Container Main ContainerMain Container

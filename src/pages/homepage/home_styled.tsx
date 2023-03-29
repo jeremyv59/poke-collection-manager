@@ -5,7 +5,6 @@ import { device } from "../../styles/Breakpoints";
 export const HomepageLayout = styled(Layout)`
   min-height: 100vh;
   width: 90%;
-  background: red;
   position: relative;
 
   @media ${device.tablet} {
@@ -14,12 +13,14 @@ export const HomepageLayout = styled(Layout)`
   }
 `;
 
-export const CustomHeader = styled(Layout.Header)`
-  margin-top: 1.6rem;
+export const CustomHeader = styled.span`
+  padding: 1rem;
   display: flex;
-  background: blue;
-  width: 95%;
+  flex-direction: column;
+  width: 100%;
   align-self: center;
+  color: white;
+  background: ${({ theme }) => theme.colors.darkSecondary};
 
   @media ${device.tablet} {
     position: absolute;
@@ -28,10 +29,22 @@ export const CustomHeader = styled(Layout.Header)`
     right: 0;
     top: 2rem;
   }
+
+  h1 {
+    font-size: 250%;
+    font-weight: 600;
+    line-height: 55px;
+  }
+
+  text {
+    font-size: 112.5%;
+    color: ${({ theme }) => theme.colors.gray};
+    line-height: 25px;
+  }
 `;
 
 export const MainContainer = styled.div`
-  background: green;
+  background: ${({ theme }) => theme.colors.darkSecondary};
   width: 100%;
 
   @media ${device.tablet} {
@@ -41,7 +54,7 @@ export const MainContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  background: yellow;
+  background: ${({ theme }) => theme.colors.dark};
   width: 100%;
 
   @media ${device.tablet} {
