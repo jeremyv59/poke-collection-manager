@@ -1,13 +1,25 @@
 import React from "react";
 import { Breadcrumb, Layout } from "antd";
-import { HomepageLayout } from "./homepage_styled";
+import { HomepageLayout, MainContainer, RightContainer } from "./home_styled";
 
 const { Header, Content } = Layout;
 
 const Homepage = () => {
   return (
     <HomepageLayout>
-      <Layout className="site-layout">
+      {/* <Header
+        style={{
+          marginTop: "1.6rem",
+          display: "flex",
+          background: "blue",
+          width: "95%",
+          alignSelf: "center",
+        }}
+      /> */}
+      <MainContainer>Main Container</MainContainer>
+
+      <RightContainer>Right Container</RightContainer>
+      {/* <Layout className="site-layout">
         <Header style={{ padding: 0, background: "blue", width: "70%" }} />
         <Content style={{ margin: "0 16px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
@@ -24,7 +36,7 @@ const Homepage = () => {
             Bill is a cat.
           </div>
         </Content>
-      </Layout>
+      </Layout> */}
     </HomepageLayout>
   );
 };
