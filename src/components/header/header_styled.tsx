@@ -40,7 +40,6 @@ export const OptionsContainer = styled.div`
 
   @media ${device.tablet} {
     display: flex;
-
     gap: 1.1rem;
   }
 `;
@@ -48,6 +47,7 @@ export const OptionsContainer = styled.div`
 export const IconContainer = styled.div`
   width: 40px;
   height: 40px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
