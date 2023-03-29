@@ -9,6 +9,7 @@ export const CustomHeader = styled.div`
   width: 100%;
   align-self: center;
   color: white;
+  background: ${({ theme }) => theme.colors.darkSecondary};
  
 
   @media ${device.tablet} {
