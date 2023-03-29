@@ -8,6 +8,7 @@ export const theme = {
     darkPurple : "#32305E",
     gray : "#7A86A1",
     dark: "#24293E",
+    darkSecondary : "#1e2235",
     white: "#ffffff",
     success: "#66A15A",
   },
