@@ -81,14 +81,15 @@ export const SidebarMenu = styled(Menu)`
 `;
 
 export const GuidenceContainer = styled.div`
-  display: flex;
-  justify-content: center;
   position: absolute;
   bottom: 10%;
   left: 25%;
   right: 25%;
+  display: none;
 
   @media ${device.laptopL} {
+    display: flex;
+    justify-content: center;
     width: 80%;
     left: 10%;
     background-color: ${({ theme }) => theme.colors.darkPurple};
