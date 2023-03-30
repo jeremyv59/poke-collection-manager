@@ -67,6 +67,13 @@ export const SidebarMenu = styled(Menu)`
     margin: 0rem !important;
   }
 
+  .ant-menu-item-icon {
+    @media ${device.laptopL} {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   && .ant-menu-item:hover {
     color: ${({ theme }) => theme.colors.white} !important;
     background: transparent !important;

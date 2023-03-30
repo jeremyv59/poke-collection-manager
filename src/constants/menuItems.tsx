@@ -12,21 +12,21 @@ export const items: MenuItemType[] = [
   {
     label: "Home",
     key: "/",
-    icon: <AiOutlineHome size={"1.25rem"} />,
+    icon: <AiOutlineHome />,
   },
   {
     label: "Collection",
     key: "/collection",
-    icon: <AiOutlineBook size={"1.25rem"} />,
+    icon: <AiOutlineBook />,
   },
   {
     label: "Cards",
     key: "/cards",
-    icon: <CgCardHearts size={"1.25rem"} />,
+    icon: <CgCardHearts />,
   },
   {
     label: "Marketplace",
     key: "4",
-    icon: <HiOutlineBuildingStorefront size={"1.25rem"} />,
+    icon: <HiOutlineBuildingStorefront />,
   },
 ];

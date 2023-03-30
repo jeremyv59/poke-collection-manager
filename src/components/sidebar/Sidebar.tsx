@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
     <SidebarLayout
       width={"15%"}
       collapsible
-      breakpoint={"lg"}
+      breakpoint={"xl"}
       collapsedWidth={80}
       trigger={null}
     >
