@@ -13,13 +13,7 @@ const Homepage = () => {
       <Header />
       <MainContainer>
         <MainCardContainer>
-          {/* <CardImageContainer>
-          
-          </CardImageContainer>
-          <CardDescriptionContainer>
-
-          </CardDescriptionContainer> */}
-          <CustomCard />
+          <CustomCard expansionTitle="Scarlet & Violet" />
         </MainCardContainer>
       </MainContainer>
       <RightContainer>Right Container</RightContainer>
