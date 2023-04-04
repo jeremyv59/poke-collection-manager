@@ -14,12 +14,22 @@ export const HomepageLayout = styled(Layout)`
 `;
 
 export const MainContainer = styled.div`
-  background: ${({ theme }) => theme.colors.darkSecondary};
+  // background: ${({ theme }) => theme.colors.darkSecondary};
+  background: red;
   width: 100%;
 
   @media ${device.tablet} {
     width: 70%;
     padding-top: 150px;
+  }
+`;
+
+export const MainCardContainer = styled.div`
+  background: yellow;
+  margin: 0rem 0.2rem;
+
+  @media ${device.tablet} {
+    margin: 0rem 1.875rem;
   }
 `;
 
