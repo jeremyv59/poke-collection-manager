@@ -1,7 +1,8 @@
 import React from "react";
-import { EditOutlined, SettingOutlined } from "@ant-design/icons";
+import { EditOutlined, EyeOutlined } from "@ant-design/icons";
 import { Avatar, Card } from "antd";
 import { AntCard } from "./card_styled";
+import CustomBtn from "../button/CustomBtn";
 
 const { Meta } = Card;
 
@@ -13,8 +14,11 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
   <AntCard
     bodyStyle={{ padding: 0 }}
     actions={[
-      <SettingOutlined value="see collection" key="See collection" />,
-      <EditOutlined key="edit" />,
+      <CustomBtn
+        btnType="text"
+        icon={<EyeOutlined />}
+        btnTitle="See collection"
+      />,
     ]}
   >
     <Meta
