@@ -16,4 +16,8 @@ export const AntCard = styled(Card)`
     display: flex;
     justify-content: center;
   }
+
+  .ant-card-meta-title {
+    margin-top: 0.3rem;
+  }
 `;
