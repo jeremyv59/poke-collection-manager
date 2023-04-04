@@ -1,8 +1,9 @@
 import React from "react";
 import { EditOutlined, EyeOutlined } from "@ant-design/icons";
 import { Avatar, Card } from "antd";
-import { AntCard } from "./card_styled";
+import { AntCard, ProgressBarContainer } from "./card_styled";
 import CustomBtn from "../button/CustomBtn";
+import ProgressBar from "../progress/ProgressBar";
 
 const { Meta } = Card;
 
@@ -12,7 +13,9 @@ type CustomCardProps = {
 
 const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
   <AntCard
-    bodyStyle={{ padding: 0 }}
+    bodyStyle={{
+      padding: 0,
+    }}
     actions={[
       <CustomBtn
         btnType="text"
@@ -35,6 +38,9 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
       }
       title={expansionTitle}
     />
+    <ProgressBarContainer>
+      <ProgressBar />
+    </ProgressBarContainer>
   </AntCard>
 );
 

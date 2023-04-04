@@ -21,3 +21,7 @@ export const AntCard = styled(Card)`
     margin-top: 0.3rem;
   }
 `;
+
+export const ProgressBarContainer = styled.div`
+  padding-left: 0.8rem;
+`;
