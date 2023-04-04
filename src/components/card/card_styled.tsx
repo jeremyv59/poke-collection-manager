@@ -1,20 +1,33 @@
 import { Card } from "antd";
 import styled from "styled-components";
+import { device } from "../../styles/Breakpoints";
 
 export const AntCard = styled(Card)`
+  .ant-card-body {
+    @media ${device.tablet} {
+      display: flex;
+      margin: 0.4rem;
+    }
+  }
+
   .ant-card-meta {
     display: flex;
     flex-direction: column;
     padding: 0.8rem;
-    // background: yellow;
+
+    @media ${device.tablet} {
+      flex-direction: row;
+      width: 80%;
+    }
   }
 
   .ant-card-meta-avatar {
     padding: 0 !important;
-    background: green;
     width: 100%;
     display: flex;
     justify-content: center;
+    border: 1px solid red;
+    border-radius: 1.5rem;
   }
 
   .ant-card-meta-title {
@@ -22,6 +35,26 @@ export const AntCard = styled(Card)`
   }
 `;
 
-export const ProgressBarContainer = styled.div`
+export const ContainerDesc = styled.div`
+  width: 100%;
   padding-left: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .expansion_title {
+    display: none;
+
+    @media ${device.tablet} {
+      display: block;
+    }
+  }
+`;
+
+export const ProgressBarContainer = styled.div`
+  @media ${device.tablet} {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
 `;

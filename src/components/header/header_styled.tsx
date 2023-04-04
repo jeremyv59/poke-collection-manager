@@ -36,8 +36,6 @@ export const CustomHeader = styled.div`
     width: 97%;
     flex-direction: row;
     justify-content: space-between;
-
-
 `;
 
 export const OptionsContainer = styled.div`

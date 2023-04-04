@@ -25,7 +25,12 @@ export const MainContainer = styled.div`
 `;
 
 export const MainCardContainer = styled.div`
-  margin: 0.4rem;
+  margin: 0.5rem;
+
+  @media ${device.tablet} {
+    margin: 1rem;
+    background: orange;
+  }
 `;
 
 export const RightContainer = styled.div`
