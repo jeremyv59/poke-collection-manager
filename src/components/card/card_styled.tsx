@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
 
 export const AntCard = styled(Card)`
+  background: transparent;
   .ant-card-body {
     @media ${device.tablet} {
       display: flex;
@@ -48,13 +49,5 @@ export const ContainerDesc = styled.div`
     @media ${device.tablet} {
       display: block;
     }
-  }
-`;
-
-export const ProgressBarContainer = styled.div`
-  @media ${device.tablet} {
-    width: 80%;
-    display: flex;
-    align-items: center;
   }
 `;

@@ -14,8 +14,7 @@ export const HomepageLayout = styled(Layout)`
 `;
 
 export const MainContainer = styled.div`
-  // background: ${({ theme }) => theme.colors.darkSecondary};
-  background: red;
+  background: ${({ theme }) => theme.colors.darkSecondary};
   width: 100%;
 
   @media ${device.tablet} {
@@ -26,10 +25,11 @@ export const MainContainer = styled.div`
 
 export const MainCardContainer = styled.div`
   margin: 0.5rem;
+  background: ${({ theme }) => theme.colors.dark};
 
   @media ${device.tablet} {
     margin: 1rem;
-    background: orange;
+    border-radius: 0.5rem;
   }
 `;
 
