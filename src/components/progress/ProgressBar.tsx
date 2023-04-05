@@ -1,22 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { AntProgress } from "./progress_styled";
 import { checkPercentage } from "../../utils/checkPercentage";
+import { updateStrokeColor } from "../../utils/updateColor";
 
 const ProgressBar: React.FC = () => {
   const [percentage, setPercentage] = useState<number>(0);
   const [strokeColor, setStrokeColor] = useState<string | undefined>();
-
-  const updateStrokeColor = (percentage: number) => {
-    if (percentage <= 25) {
-      return "red";
-    } else if (percentage <= 50) {
-      return "orange";
-    } else if (percentage <= 75) {
-      return "yellow";
-    } else {
-      return "green";
-    }
-  };
 
   useEffect(() => {
     let percentagResult = checkPercentage(90, 100);

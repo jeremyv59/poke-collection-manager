@@ -8,4 +8,8 @@ export const AntProgress = styled(Progress)`
   @media ${device.tablet} {
     width: 85%;
   }
+
+  .ant-progress-text {
+    color: white;
+  }
 `;
