@@ -16,7 +16,7 @@ const ListItem: React.FC<ListItemProps> = ({
 }) => {
   return (
     <Container>
-      <Image src={imageSrc} />
+      <Image alt="expansion_logo" src={imageSrc} />
       <ExpansionName>{expansionName}</ExpansionName>
       <DateTxt>{releaseDate}</DateTxt>
       <CustomBtn

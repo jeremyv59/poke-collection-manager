@@ -6,7 +6,6 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.colors.dark};
   border-radius: 1.25rem;
   padding: 0rem 0.6rem;
-  width: 100%;
   margin-bottom: 1rem;
 
   .ant-btn {
@@ -26,7 +25,7 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: auto;
+  height: 160px;
   padding: 1rem;
   border-bottom: 1px solid white;
 `;
