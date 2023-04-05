@@ -33,6 +33,10 @@ export const MainCardContainer = styled.div`
   }
 `;
 
+export const ListContainer = styled.div`
+  margin: 1rem 0.5rem;
+`;
+
 export const RightContainer = styled.div`
   background: ${({ theme }) => theme.colors.dark};
   width: 100%;
