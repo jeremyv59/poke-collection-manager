@@ -39,6 +39,11 @@ export const AntCard = styled(Card)`
   .ant-card-actions {
     background: transparent;
     border-top: 1px solid ${({ theme }) => theme.colors.gray};
+
+    .ant-btn:hover {
+      background: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.darkPurple};
+    }
   }
 `;
 

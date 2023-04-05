@@ -1,6 +1,5 @@
 import React from "react";
 import { AntBtn } from "./button_styled";
-import { IconType } from "antd/es/notification/interface";
 import { ButtonType } from "antd/es/button";
 
 type ButtonProps = {
