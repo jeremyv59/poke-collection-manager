@@ -27,6 +27,7 @@ export const Container = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 180px;
+  object-fit: contain;
   padding: 1rem;
   border-bottom: 1px solid white;
 `;

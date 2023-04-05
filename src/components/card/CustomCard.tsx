@@ -34,7 +34,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
       avatar={
         <img
           style={{
-            width: "70%",
+            width: "60%",
             borderRadius: "1.5rem",
             margin: "0.3rem 0rem",
           }}

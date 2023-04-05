@@ -34,7 +34,11 @@ export const MainCardContainer = styled.div`
 `;
 
 export const ListContainer = styled.div`
-  margin: 1rem 0.5rem;
+  margin: 0.5rem;
+
+  @media ${device.tablet} {
+    margin: 1rem;
+  }
 `;
 
 export const RightContainer = styled.div`

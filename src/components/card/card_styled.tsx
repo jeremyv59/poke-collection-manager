@@ -4,6 +4,7 @@ import { device } from "../../styles/Breakpoints";
 
 export const AntCard = styled(Card)`
   background: transparent;
+
   .ant-card-body {
     @media ${device.tablet} {
       display: flex;
@@ -18,7 +19,7 @@ export const AntCard = styled(Card)`
 
     @media ${device.tablet} {
       flex-direction: row;
-      width: 80%;
+      width: 100%;
     }
   }
 
