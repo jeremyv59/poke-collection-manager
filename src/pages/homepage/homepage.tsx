@@ -14,7 +14,7 @@ const Homepage = () => {
     <HomepageLayout>
       <Header />
       <MainContainer>
-        <MainCardContainer>
+        <MainCardContainer data-testid="main-card">
           <CustomCard expansionTitle="Scarlet & Violet" />
         </MainCardContainer>
         <ListContainer>

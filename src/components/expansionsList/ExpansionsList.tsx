@@ -63,7 +63,7 @@ const ExpansionsList: React.FC<ListProps> = ({ listTitle }) => {
   return (
     <React.Fragment>
       <ListTitle>{listTitle}</ListTitle>
-      <ItemsContainer>
+      <ItemsContainer data-testid="expansions-list">
         {expansionsData.map((expansion: ExpansionType) => {
           return (
             <ListItem
