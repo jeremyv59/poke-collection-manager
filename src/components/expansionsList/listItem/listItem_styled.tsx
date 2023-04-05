@@ -7,6 +7,7 @@ export const Container = styled.div`
   border-radius: 1.25rem;
   padding: 0rem 0.6rem;
   margin-bottom: 1rem;
+  width: 100%;
 
   .ant-btn {
     width: 100%;
@@ -25,7 +26,7 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 160px;
+  height: 180px;
   padding: 1rem;
   border-bottom: 1px solid white;
 `;
