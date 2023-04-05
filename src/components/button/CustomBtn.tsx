@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const CustomBtn: React.FC<ButtonProps> = ({ btnTitle, icon, btnType }) => {
   return (
-    <AntBtn type={btnType} className="custom_button" icon={icon}>
+    <AntBtn type={btnType} icon={icon}>
       {btnTitle}
     </AntBtn>
   );

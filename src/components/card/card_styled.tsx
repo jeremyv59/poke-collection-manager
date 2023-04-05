@@ -40,9 +40,15 @@ export const AntCard = styled(Card)`
     background: transparent;
     border-top: 1px solid ${({ theme }) => theme.colors.gray};
 
-    .ant-btn:hover {
-      background: ${({ theme }) => theme.colors.white};
-      color: ${({ theme }) => theme.colors.darkPurple};
+    .ant-btn {
+      background-color: ${({ theme }) => theme.colors.purple};
+      color: white;
+      transition: background 0.7s ease, color 0.7s linear;
+
+      &:hover {
+        background: white;
+        color: ${({ theme }) => theme.colors.darkPurple};
+      }
     }
   }
 `;

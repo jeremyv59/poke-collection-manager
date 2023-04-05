@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
 
 export const AntBtn = styled(Button)`
-  background-color: ${({ theme }) => theme.colors.purple};
-  color: white;
   border-radius: 3.125rem;
   width: 55%;
   height: 40px;
