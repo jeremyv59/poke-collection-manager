@@ -27,12 +27,18 @@ export const AntCard = styled(Card)`
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    border: 1px solid ${({ theme }) => theme.colors.gray};
     border-radius: 1.5rem;
   }
 
   .ant-card-meta-title {
     margin-top: 0.3rem;
+    color: white;
+  }
+
+  .ant-card-actions {
+    background: transparent;
+    border-top: 1px solid ${({ theme }) => theme.colors.gray};
   }
 `;
 
@@ -42,12 +48,18 @@ export const ContainerDesc = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
 
-  .expansion_title {
-    display: none;
+export const ExpansionTitle = styled.h4`
+  display: none;
+  color: white;
 
-    @media ${device.tablet} {
-      display: block;
-    }
+  @media ${device.tablet} {
+    display: block;
+    padding-top: 0.5rem;
   }
+`;
+
+export const PercentageTxt = styled.p`
+  color: ${({ theme }) => theme.colors.gray};
 `;

@@ -19,17 +19,17 @@ export const MainContainer = styled.div`
 
   @media ${device.tablet} {
     width: 70%;
-    padding-top: 150px;
+    padding-top: 120px;
   }
 `;
 
 export const MainCardContainer = styled.div`
   margin: 0.5rem;
   background: ${({ theme }) => theme.colors.dark};
+  border-radius: 0.5rem;
 
   @media ${device.tablet} {
     margin: 1rem;
-    border-radius: 0.5rem;
   }
 `;
 

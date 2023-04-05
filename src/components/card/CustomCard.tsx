@@ -1,7 +1,12 @@
 import React from "react";
 import { EyeOutlined } from "@ant-design/icons";
 import { Card } from "antd";
-import { AntCard, ContainerDesc } from "./card_styled";
+import {
+  AntCard,
+  ContainerDesc,
+  ExpansionTitle,
+  PercentageTxt,
+} from "./card_styled";
 import CustomBtn from "../button/CustomBtn";
 import ProgressBar from "../progress/ProgressBar";
 
@@ -13,6 +18,7 @@ type CustomCardProps = {
 
 const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
   <AntCard
+    bordered={false}
     bodyStyle={{
       padding: 0,
     }}
@@ -39,8 +45,8 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
       title={expansionTitle}
     />
     <ContainerDesc>
-      <h4 className="expansion_title">{expansionTitle}</h4>
-      <p>Percentage completed :</p>
+      <ExpansionTitle>{expansionTitle}</ExpansionTitle>
+      <PercentageTxt>Percentage completed :</PercentageTxt>
       <ProgressBar />
     </ContainerDesc>
   </AntCard>
