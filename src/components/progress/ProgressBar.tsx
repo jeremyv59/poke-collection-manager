@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { AntProgress } from "./progress_styled";
 import { checkPercentage } from "../../utils/checkPercentage";
 
@@ -6,7 +6,7 @@ const ProgressBar: React.FC = () => {
   const [percentage, setPercentage] = useState<number>(0);
   const [strokeColor, setStrokeColor] = useState<string | undefined>();
 
-  const updateStrokeColor = () => {
+  const updateStrokeColor = (percentage: number) => {
     if (percentage <= 25) {
       return "red";
     } else if (percentage <= 50) {
@@ -20,13 +20,10 @@ const ProgressBar: React.FC = () => {
 
   useEffect(() => {
     let percentagResult = checkPercentage(90, 100);
+    let colorRes = updateStrokeColor(percentagResult);
+    setStrokeColor(colorRes);
     setPercentage(percentagResult);
   }, []);
-
-  useEffect(() => {
-    let colorRes = updateStrokeColor();
-    setStrokeColor(colorRes);
-  }, [percentage]);
 
   return (
     <AntProgress strokeColor={strokeColor} percent={percentage}></AntProgress>
