@@ -9,8 +9,8 @@ export const ListTitle = styled.h3`
 
 export const ItemsContainer = styled.div`
   display: grid;
-  grid-gap: 2rem;
-  margin-top: 1.5rem;
+  grid-gap: 1rem;
+  margin-top: 1rem;
 
   @media (min-width: 600px) and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);

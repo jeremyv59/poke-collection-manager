@@ -4,11 +4,11 @@ import { device } from "../../styles/Breakpoints";
 
 export const AntBtn = styled(Button)`
   border-radius: 3.125rem;
-  width: 55%;
+  width: 75%;
   height: 40px;
 
   @media ${device.mobileM} {
-    width: 50%;
+    width: 65%;
   }
 
   @media ${device.mobileL} {

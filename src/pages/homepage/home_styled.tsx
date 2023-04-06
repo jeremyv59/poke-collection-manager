@@ -19,7 +19,7 @@ export const MainContainer = styled.div`
 
   @media ${device.tablet} {
     width: 70%;
-    padding-top: 120px;
+    padding-top: 100px;
   }
 `;
 
