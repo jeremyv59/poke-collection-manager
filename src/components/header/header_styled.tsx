@@ -38,6 +38,18 @@ export const CustomHeader = styled.div`
     justify-content: space-between;
 `;
 
+export const HeaderTitle = styled.h1`
+  font-size: 250%;
+  font-weight: 600;
+  line-height: 40px;
+`;
+
+export const HeaderTxt = styled.text`
+  font-size: 112.5%;
+  color: ${({ theme }) => theme.colors.gray};
+  line-height: 25px;
+`;
+
 export const OptionsContainer = styled.div`
   display: none;
 

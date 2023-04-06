@@ -8,6 +8,8 @@ import {
   Status,
   ProfileIcon,
   MenuIcon,
+  HeaderTitle,
+  HeaderTxt,
 } from "./header_styled";
 import { FiSettings } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -16,8 +18,8 @@ const Header = () => {
   return (
     <CustomHeader>
       <div>
-        <h1>Home</h1>
-        <text>Hello Jérémy, welcome back !</text>
+        <HeaderTitle>Home</HeaderTitle>
+        <HeaderTxt>Hello Jérémy, welcome back !</HeaderTxt>
       </div>
       <OptionsContainer>
         <IconContainer>
