@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import { ThemeType } from "./Theme";
 
 const GlobalStyles = createGlobalStyle<ThemeType>`
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
-
   * {
     margin: 0;
     padding: 0;
@@ -12,11 +10,11 @@ const GlobalStyles = createGlobalStyle<ThemeType>`
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Poppins, sans-serif;
   }
 
   body {
     background-color:${({ theme }) => theme.colors.white};
-    font-family: Poppins, sans-serif;
   }
 `;
 
