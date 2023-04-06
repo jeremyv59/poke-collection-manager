@@ -26,7 +26,7 @@ export const items: MenuItemType[] = [
   },
   {
     label: "Marketplace",
-    key: "4",
+    key: "/marketplace",
     icon: <HiOutlineBuildingStorefront />,
   },
 ];
