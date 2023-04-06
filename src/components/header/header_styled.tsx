@@ -11,20 +11,7 @@ export const CustomHeader = styled.div`
   align-items: center;
   color: white;
   background: ${({ theme }) => theme.colors.darkSecondary};
- 
-
-  h1 {
-    font-size: 250%;
-    font-weight: 600;
-    line-height: 40px;
-  }
-
-  text {
-    font-size: 112.5%;
-    color: ${({ theme }) => theme.colors.gray};
-    line-height: 25px;
-  }
-  
+   
   @media ${device.tablet} {
     position: absolute;
     padding: 0;
@@ -44,7 +31,7 @@ export const HeaderTitle = styled.h1`
   line-height: 40px;
 `;
 
-export const HeaderTxt = styled.text`
+export const HeaderTxt = styled.small`
   font-size: 112.5%;
   color: ${({ theme }) => theme.colors.gray};
   line-height: 25px;

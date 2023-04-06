@@ -32,7 +32,7 @@ export const Image = styled.img`
   border-bottom: 1px solid white;
 `;
 
-export const ExpansionName = styled.text`
+export const ExpansionName = styled.h6`
   font-size: 1rem;
   color: white;
   font-weight: 600;

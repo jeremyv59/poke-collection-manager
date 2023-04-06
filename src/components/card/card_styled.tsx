@@ -65,6 +65,7 @@ export const ContainerDesc = styled.div`
 export const ExpansionTitle = styled.h4`
   display: none;
   color: white;
+  font-size: 1rem;
 
   @media ${device.tablet} {
     display: block;
