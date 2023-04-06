@@ -1,17 +1,22 @@
 import App from "./App";
+import React, { ReactDOM } from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { act } from "react-dom/test-utils";
+import { waitFor } from "@testing-library/dom";
 
-test("rendering full app/navigating", () => {
-  render(<App />);
+test("rendering full app/navigating", async () => {
+  await act(async () => {
+    render(<App />);
+  });
 
-  // Verify content of default page
-  expect(screen.getByText(/Latest Expansions/i)).toBeInTheDocument();
+  expect(screen.getByText("Latest expansions")).toBeInTheDocument();
   expect(screen.getByTestId("expansions-list")).toBeInTheDocument();
 
-  // Verify page content after navigating
-  userEvent.click(screen.getByText(/Cards/i));
-  expect(screen.getByText(/Cards/i)).toBeInTheDocument();
+  await act(async () => {
+    userEvent.click(screen.getByText(/Marketplace/i));
+  });
+  expect(screen.getByTestId("marketplace-txt")).toBeInTheDocument();
 });
