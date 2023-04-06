@@ -7,7 +7,7 @@ export const HomepageLayout = styled(Layout)`
   width: 90%;
   position: relative;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     display: flex;
     flex-direction: row;
   }
@@ -18,8 +18,11 @@ export const MainContainer = styled.div`
   width: 100%;
 
   @media ${device.tablet} {
-    width: 70%;
     padding-top: 100px;
+  }
+
+  @media ${device.laptop} {
+    width: 70%;
   }
 `;
 
@@ -45,7 +48,7 @@ export const RightContainer = styled.div`
   background: ${({ theme }) => theme.colors.dark};
   width: 100%;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     width: 30%;
     padding-top: 100px;
   }
@@ -53,7 +56,7 @@ export const RightContainer = styled.div`
 
 export const ContentContainer = styled.div`
   padding: 0rem 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
 `;
 
 export const TotalCards = styled.div`
@@ -65,15 +68,15 @@ export const TotalCards = styled.div`
   justify-content: space-around;
   border-radius: 1.875rem;
   padding: 1.875rem 0rem;
+  margin-bottom: 2rem;
 
   .ant-btn {
     display: flex;
-    background: brown;
     align-items: center;
     justify-content: space-between;
     width: 60%;
     flex-direction: row-reverse;
-    background-color: #5464f7;
+    background-color: ${({ theme }) => theme.colors.dark};
     color: white;
   }
 `;
@@ -96,4 +99,55 @@ export const DateInfo = styled.small`
   font-weight: 500;
   font-size: 0.875rem;
   margin-bottom: 1.25rem;
+`;
+
+export const ListTitle = styled.h6`
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 33px;
+  color: white;
+  margin-bottom: 1.2rem;
+`;
+
+export const Expansion = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ${({ theme }) => theme.colors.purple};
+    color: white;
+    width: 20%;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+`;
+export const DescContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ImageContainer = styled.div`
+  width: 64px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid ${({ theme }) => theme.colors.gray};
+  border-radius: 50%;
+  padding: 0.2rem;
+`;
+
+export const ExpansionImg = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+`;
+export const ExpansionName = styled.small`
+  width: 100%;
+  padding-left: 0.7rem;
+  color: white;
 `;

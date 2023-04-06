@@ -5,7 +5,7 @@ import { device } from "../../styles/Breakpoints";
 export const AntBtn = styled(Button)`
   border-radius: 3.125rem;
   width: 75%;
-  height: 40px;
+  // height: 40px;
 
   @media ${device.mobileM} {
     width: 65%;
