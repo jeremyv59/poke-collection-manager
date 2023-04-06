@@ -8,6 +8,7 @@ import {
 import Header from "../../components/header/Header";
 import CustomCard from "../../components/card/CustomCard";
 import ExpansionsList from "../../components/expansionsList/ExpansionsList";
+import { expansionsData } from "../../constants/expansionsData";
 
 const Homepage = () => {
   return (
@@ -18,7 +19,7 @@ const Homepage = () => {
           <CustomCard expansionTitle="Scarlet & Violet" />
         </MainCardContainer>
         <ListContainer>
-          <ExpansionsList listTitle="Latest expansions" />
+          <ExpansionsList listTitle="Latest expansions" data={expansionsData} />
         </ListContainer>
       </MainContainer>
       <RightContainer>Right Container</RightContainer>
