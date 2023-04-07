@@ -49,7 +49,7 @@ const Homepage = () => {
           </TotalCards>
 
           <ListTitle>Top expansions collected</ListTitle>
-          <Expansion>
+          {/* <Expansion>
             <DescContainer>
               <ImageContainer>
                 <ExpansionImg src="https://static.tcgcollector.com/content/images/e5/13/c2/e513c2ef554ec5cbbae930bc6f6471a028ca002b82b34e669c161af0bcfdd68a.png"></ExpansionImg>
@@ -77,7 +77,20 @@ const Homepage = () => {
               <ExpansionName>Pokemon GO</ExpansionName>
             </DescContainer>
             <CustomBtn btnType="text" btnTitle="View" />
-          </Expansion>
+          </Expansion> */}
+          {expansionsData.map((expansion) => {
+            return (
+              <Expansion key={expansion.id}>
+                <DescContainer>
+                  <ImageContainer>
+                    <ExpansionImg src={expansion.image_url}></ExpansionImg>
+                  </ImageContainer>
+                  <ExpansionName>{expansion.expansionName}</ExpansionName>
+                </DescContainer>
+                <CustomBtn btnType="text" btnTitle="View" />
+              </Expansion>
+            );
+          })}
         </ContentContainer>
       </RightContainer>
     </HomepageLayout>
