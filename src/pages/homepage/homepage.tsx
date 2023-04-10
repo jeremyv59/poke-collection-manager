@@ -1,4 +1,5 @@
 import {
+  CardName,
   ContentContainer,
   DateInfo,
   DescContainer,
@@ -11,7 +12,13 @@ import {
   ListTitle,
   MainCardContainer,
   MainContainer,
+  PokeCard,
+  PokeImg,
+  PokeImgContainer,
   RightContainer,
+  SmallText,
+  TextContainer,
+  // TextContainer,
   TotalCards,
   TotalCount,
   TotalTitle,
@@ -49,35 +56,6 @@ const Homepage = () => {
           </TotalCards>
 
           <ListTitle>Top expansions collected</ListTitle>
-          {/* <Expansion>
-            <DescContainer>
-              <ImageContainer>
-                <ExpansionImg src="https://static.tcgcollector.com/content/images/e5/13/c2/e513c2ef554ec5cbbae930bc6f6471a028ca002b82b34e669c161af0bcfdd68a.png"></ExpansionImg>
-              </ImageContainer>
-              <ExpansionName>Pokemon GO</ExpansionName>
-            </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
-          </Expansion>
-
-          <Expansion>
-            <DescContainer>
-              <ImageContainer>
-                <ExpansionImg src="https://static.tcgcollector.com/content/images/e5/13/c2/e513c2ef554ec5cbbae930bc6f6471a028ca002b82b34e669c161af0bcfdd68a.png"></ExpansionImg>
-              </ImageContainer>
-              <ExpansionName>Pokemon GO</ExpansionName>
-            </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
-          </Expansion>
-
-          <Expansion>
-            <DescContainer>
-              <ImageContainer>
-                <ExpansionImg src="https://static.tcgcollector.com/content/images/e5/13/c2/e513c2ef554ec5cbbae930bc6f6471a028ca002b82b34e669c161af0bcfdd68a.png"></ExpansionImg>
-              </ImageContainer>
-              <ExpansionName>Pokemon GO</ExpansionName>
-            </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
-          </Expansion> */}
           {expansionsData.map((expansion) => {
             return (
               <Expansion key={expansion.id}>
@@ -91,6 +69,71 @@ const Homepage = () => {
               </Expansion>
             );
           })}
+          <ListTitle>Last added in collection</ListTitle>
+          <PokeCard>
+            <DescContainer>
+              <PokeImgContainer>
+                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
+              </PokeImgContainer>
+              <TextContainer>
+                <CardName>Sulfura de galar</CardName>
+                <SmallText>Crown & Zenith</SmallText>
+              </TextContainer>
+            </DescContainer>
+            <CustomBtn btnType="text" btnTitle="View" />
+          </PokeCard>
+
+          <PokeCard>
+            <DescContainer>
+              <PokeImgContainer>
+                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
+              </PokeImgContainer>
+              <TextContainer>
+                <CardName>Sulfura de galar</CardName>
+                <SmallText>Crown & Zenith</SmallText>
+              </TextContainer>
+            </DescContainer>
+            <CustomBtn btnType="text" btnTitle="View" />
+          </PokeCard>
+
+          <PokeCard>
+            <DescContainer>
+              <PokeImgContainer>
+                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
+              </PokeImgContainer>
+              <TextContainer>
+                <CardName>Sulfura de galar</CardName>
+                <SmallText>Crown & Zenith</SmallText>
+              </TextContainer>
+            </DescContainer>
+            <CustomBtn btnType="text" btnTitle="View" />
+          </PokeCard>
+
+          <PokeCard>
+            <DescContainer>
+              <PokeImgContainer>
+                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
+              </PokeImgContainer>
+              <TextContainer>
+                <CardName>Sulfura de galar</CardName>
+                <SmallText>Crown & Zenith</SmallText>
+              </TextContainer>
+            </DescContainer>
+            <CustomBtn btnType="text" btnTitle="View" />
+          </PokeCard>
+
+          <PokeCard>
+            <DescContainer>
+              <PokeImgContainer>
+                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
+              </PokeImgContainer>
+              <TextContainer>
+                <CardName>Sulfura de galar</CardName>
+                <SmallText>Crown & Zenith</SmallText>
+              </TextContainer>
+            </DescContainer>
+            <CustomBtn btnType="text" btnTitle="View" />
+          </PokeCard>
         </ContentContainer>
       </RightContainer>
     </HomepageLayout>

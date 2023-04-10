@@ -1,8 +1,9 @@
 import { Card } from "antd";
 import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
+import { CardProps } from "antd/lib/card";
 
-export const AntCard = styled(Card)`
+export const AntCard: typeof Card = styled(Card)<CardProps>`
   background: transparent;
 
   .ant-card-body {
