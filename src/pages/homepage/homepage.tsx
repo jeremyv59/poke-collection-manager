@@ -80,7 +80,7 @@ const Homepage = () => {
                 <SmallText>Crown & Zenith</SmallText>
               </TextContainer>
             </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
+            <SmallText>Just now</SmallText>
           </PokeCard>
 
           <PokeCard>
@@ -93,7 +93,7 @@ const Homepage = () => {
                 <SmallText>Crown & Zenith</SmallText>
               </TextContainer>
             </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
+            <SmallText>1hr ago</SmallText>
           </PokeCard>
 
           <PokeCard>
@@ -106,7 +106,7 @@ const Homepage = () => {
                 <SmallText>Crown & Zenith</SmallText>
               </TextContainer>
             </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
+            <SmallText>2hr ago</SmallText>
           </PokeCard>
 
           <PokeCard>
@@ -119,7 +119,7 @@ const Homepage = () => {
                 <SmallText>Crown & Zenith</SmallText>
               </TextContainer>
             </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
+            <SmallText>3hr ago</SmallText>
           </PokeCard>
 
           <PokeCard>
@@ -132,7 +132,7 @@ const Homepage = () => {
                 <SmallText>Crown & Zenith</SmallText>
               </TextContainer>
             </DescContainer>
-            <CustomBtn btnType="text" btnTitle="View" />
+            <SmallText>4hr ago</SmallText>
           </PokeCard>
         </ContentContainer>
       </RightContainer>

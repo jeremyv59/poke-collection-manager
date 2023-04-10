@@ -197,4 +197,5 @@ export const CardName = styled.small`
 export const SmallText = styled.p`
   color: ${({ theme }) => theme.colors.gray};
   font-size: 0.75rem;
+  font-weight: 600;
 `;
