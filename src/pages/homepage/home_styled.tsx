@@ -106,7 +106,7 @@ export const ListTitle = styled.h6`
   font-weight: 600;
   line-height: 33px;
   color: white;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const Expansion = styled.div`
