@@ -73,11 +73,21 @@ export const TotalCards = styled.div`
   .ant-btn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 60%;
     flex-direction: row-reverse;
     background-color: ${({ theme }) => theme.colors.dark};
     color: white;
+    transition: background 0.7s ease, color 0.7s linear;
+
+    &:hover {
+      background: white;
+      color: ${({ theme }) => theme.colors.darkPurple};
+    }
+  }
+
+  .anticon {
+    margin-left: 0.5rem;
   }
 `;
 
@@ -124,6 +134,12 @@ export const Expansion = styled.div`
     width: 20%;
     font-size: 0.7rem;
     font-weight: 700;
+    transition: background 0.7s ease, color 0.7s linear;
+
+    &:hover {
+      background: white;
+      color: ${({ theme }) => theme.colors.darkPurple};
+    }
   }
 `;
 export const DescContainer = styled.div`

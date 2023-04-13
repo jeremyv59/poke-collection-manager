@@ -1,8 +1,8 @@
 import { routerType } from "../types/router.types";
-import Homepage from "./Homepage/Homepage";
 import Collection from "./collection/Collection";
 import Cards from "./cards/Cards";
 import Marketplace from "./marketplace/Marketplace";
+import Homepage from "./homepage/Homepage";
 
 const pagesData: routerType[] = [
   {
