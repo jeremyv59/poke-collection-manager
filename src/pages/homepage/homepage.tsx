@@ -48,6 +48,7 @@ const Homepage = () => {
               06 avr 2023 at 14:18 PM
             </SmallText>
             <CustomBtn
+              buttonSize="small"
               icon={<ArrowRightOutlined />}
               btnTitle="My collection"
               btnType="text"
@@ -66,7 +67,7 @@ const Homepage = () => {
                   </ImageContainer>
                   <ExpansionName>{expansion.expansionName}</ExpansionName>
                 </DescContainer>
-                <CustomBtn btnType="text" btnTitle="View" />
+                <CustomBtn buttonSize="small" btnType="text" btnTitle="View" />
               </Expansion>
             );
           })}

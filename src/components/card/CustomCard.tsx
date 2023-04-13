@@ -20,6 +20,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
     }}
     actions={[
       <CustomBtn
+        buttonSize="small"
         btnType="text"
         icon={<EyeOutlined />}
         btnTitle="See collection"

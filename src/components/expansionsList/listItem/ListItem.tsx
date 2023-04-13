@@ -21,6 +21,7 @@ const ListItem: React.FC<ListItemProps> = ({
       <ExpansionName>{expansionName}</ExpansionName>
       <SmallText marginBottom={"0.8rem"}>{releaseDate}</SmallText>
       <CustomBtn
+        buttonSize="small"
         icon={<EyeOutlined />}
         btnType="text"
         btnTitle="View Expansion"
