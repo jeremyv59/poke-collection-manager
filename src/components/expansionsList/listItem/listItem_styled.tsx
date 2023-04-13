@@ -38,10 +38,3 @@ export const ExpansionName = styled.h6`
   font-weight: 600;
   margin-top: 0.5rem;
 `;
-
-export const DateTxt = styled.small`
-  color: ${({ theme }) => theme.colors.gray};
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-`;

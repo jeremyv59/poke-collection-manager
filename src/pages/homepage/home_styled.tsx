@@ -72,6 +72,7 @@ export const TotalCards = styled.div`
 
   .ant-btn {
     display: flex;
+    margin-top: 1.25rem;
     align-items: center;
     justify-content: center;
     width: 60%;
@@ -102,21 +103,6 @@ export const TotalCount = styled.h6`
   font-weight: 700;
   font-size: 2.75rem;
   line-height: 60px;
-`;
-
-export const DateInfo = styled.small`
-  color: ${({ theme }) => theme.colors.gray};
-  font-weight: 500;
-  font-size: 0.875rem;
-  margin-bottom: 1.25rem;
-`;
-
-export const ListTitle = styled.h6`
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 33px;
-  color: white;
-  margin-bottom: 1.5rem;
 `;
 
 export const Expansion = styled.div`
@@ -210,8 +196,8 @@ export const CardName = styled.small`
   font-size: 1rem;
 `;
 
-export const SmallText = styled.p`
-  color: ${({ theme }) => theme.colors.gray};
-  font-size: 0.75rem;
-  font-weight: 600;
-`;
+// export const SmallText = styled.p`
+//   color: ${({ theme }) => theme.colors.gray};
+//   font-size: 0.75rem;
+//   font-weight: 600;
+// `;

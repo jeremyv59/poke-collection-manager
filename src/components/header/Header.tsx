@@ -5,21 +5,22 @@ import {
   UserContainer,
   UserName,
   UserDescContainer,
-  Status,
   ProfileIcon,
   MenuIcon,
   HeaderTitle,
-  HeaderTxt,
 } from "./header_styled";
 import { FiSettings } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { SmallText } from "../../styles/GlobalStyles";
 
 const Header = () => {
   return (
     <CustomHeader>
       <div>
         <HeaderTitle>Home</HeaderTitle>
-        <HeaderTxt>Hello Jérémy, welcome back !</HeaderTxt>
+        <SmallText fontSize={"1.125rem"} fontWeight={500}>
+          Hello Jérémy, welcome back !
+        </SmallText>
       </div>
       <OptionsContainer>
         <IconContainer>
@@ -31,7 +32,7 @@ const Header = () => {
         <UserContainer>
           <UserDescContainer>
             <UserName>Jérémy Vaneste</UserName>
-            <Status>User</Status>
+            <SmallText fontWeight={400}>User</SmallText>
           </UserDescContainer>
           <ProfileIcon />
         </UserContainer>

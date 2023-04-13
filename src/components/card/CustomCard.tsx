@@ -1,14 +1,10 @@
 import React from "react";
 import { EyeOutlined } from "@ant-design/icons";
 import { Card } from "antd";
-import {
-  AntCard,
-  ContainerDesc,
-  ExpansionTitle,
-  PercentageTxt,
-} from "./card_styled";
+import { AntCard, ContainerDesc, ExpansionTitle } from "./card_styled";
 import CustomBtn from "../button/CustomBtn";
 import ProgressBar from "../progress/ProgressBar";
+import { SmallText } from "../../styles/GlobalStyles";
 
 const { Meta } = Card;
 
@@ -46,7 +42,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ expansionTitle }) => (
     />
     <ContainerDesc>
       <ExpansionTitle>{expansionTitle}</ExpansionTitle>
-      <PercentageTxt>Percentage completed :</PercentageTxt>
+      <SmallText fontWeight={400}>Percentage completed :</SmallText>
       <ProgressBar />
     </ContainerDesc>
   </AntCard>

@@ -73,7 +73,3 @@ export const ExpansionTitle = styled.h4`
     padding-top: 0.5rem;
   }
 `;
-
-export const PercentageTxt = styled.p`
-  color: ${({ theme }) => theme.colors.gray};
-`;

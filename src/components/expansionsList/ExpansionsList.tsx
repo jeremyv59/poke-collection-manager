@@ -1,7 +1,8 @@
 import React from "react";
-import { ItemsContainer, ListTitle } from "./expansionsList_styled";
+import { ItemsContainer } from "./expansionsList_styled";
 import ListItem from "./listItem/ListItem";
 import { ExpansionType } from "../../constants/expansionsData";
+import { HeadingText } from "../../styles/GlobalStyles";
 
 type ListProps = {
   listTitle: string;
@@ -11,7 +12,7 @@ type ListProps = {
 const ExpansionsList: React.FC<ListProps> = ({ listTitle, data }) => {
   return (
     <React.Fragment>
-      <ListTitle>{listTitle}</ListTitle>
+      <HeadingText>{listTitle}</HeadingText>
       <ItemsContainer data-testid="expansions-list">
         {data.map((expansion: ExpansionType) => {
           return (

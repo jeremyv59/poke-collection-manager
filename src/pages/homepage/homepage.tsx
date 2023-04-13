@@ -1,7 +1,6 @@
 import {
   CardName,
   ContentContainer,
-  DateInfo,
   DescContainer,
   Expansion,
   ExpansionImg,
@@ -9,16 +8,13 @@ import {
   HomepageLayout,
   ImageContainer,
   ListContainer,
-  ListTitle,
   MainCardContainer,
   MainContainer,
   PokeCard,
   PokeImg,
   PokeImgContainer,
   RightContainer,
-  SmallText,
   TextContainer,
-  // TextContainer,
   TotalCards,
   TotalCount,
   TotalTitle,
@@ -29,6 +25,7 @@ import ExpansionsList from "../../components/expansionsList/ExpansionsList";
 import { expansionsData } from "../../constants/expansionsData";
 import CustomBtn from "../../components/button/CustomBtn";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { HeadingText, SmallText } from "../../styles/GlobalStyles";
 
 const Homepage = () => {
   return (
@@ -47,7 +44,9 @@ const Homepage = () => {
           <TotalCards>
             <TotalTitle>Your total of cards :</TotalTitle>
             <TotalCount>3875</TotalCount>
-            <DateInfo>06 avr 2023 at 14:18 PM</DateInfo>
+            <SmallText fontSize={"0.875rem"} fontWeight={500}>
+              06 avr 2023 at 14:18 PM
+            </SmallText>
             <CustomBtn
               icon={<ArrowRightOutlined />}
               btnTitle="My collection"
@@ -55,7 +54,9 @@ const Homepage = () => {
             />
           </TotalCards>
 
-          <ListTitle>Top expansions collected</ListTitle>
+          <HeadingText marginBottom={"1.5rem"}>
+            Top expansions collected
+          </HeadingText>
           {expansionsData.map((expansion) => {
             return (
               <Expansion key={expansion.id}>
@@ -69,7 +70,9 @@ const Homepage = () => {
               </Expansion>
             );
           })}
-          <ListTitle>Last added in collection</ListTitle>
+          <HeadingText marginBottom={"1.5rem"}>
+            Last added in collection
+          </HeadingText>
           <PokeCard>
             <DescContainer>
               <PokeImgContainer>

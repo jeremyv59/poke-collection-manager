@@ -31,11 +31,11 @@ export const HeaderTitle = styled.h1`
   line-height: 40px;
 `;
 
-export const HeaderTxt = styled.small`
-  font-size: 112.5%;
-  color: ${({ theme }) => theme.colors.gray};
-  line-height: 25px;
-`;
+// export const HeaderTxt = styled.small`
+//   font-size: 112.5%;
+//   color: ${({ theme }) => theme.colors.gray};
+//   line-height: 25px;
+// `;
 
 export const OptionsContainer = styled.div`
   display: none;

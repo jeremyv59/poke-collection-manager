@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
 
-export const ListTitle = styled.h3`
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-`;
-
 export const ItemsContainer = styled.div`
   display: grid;
   grid-gap: 1rem;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { CSSProperties, createGlobalStyle } from "styled-components";
 import { ThemeType } from "./Theme";
 
 const GlobalStyles = createGlobalStyle<ThemeType>`
@@ -18,5 +18,19 @@ const GlobalStyles = createGlobalStyle<ThemeType>`
   }
 `;
 
+// GLOBAL COMPONENTS
+export const HeadingText = styled.h4<CSSProperties>`
+  color: ${p => (p.color ? p.color : "white")};
+  font-size: ${p => (p.fontSize ? p.fontSize : "1.5rem")};
+  font-weight: ${p => (p.fontWeight ? p.fontWeight : "600")};
+  margin-bottom :  ${p => (p.marginBottom ? p.marginBottom : "0")};
+`;
+
+export const SmallText = styled.small<CSSProperties>`
+  color: ${p => (p.color ? p.color : "#7A86A1")};
+  font-size: ${p => (p.fontSize ? p.fontSize : "0.75rem")};
+  font-weight: ${p => (p.fontWeight ? p.fontWeight : "600")};
+  margin-bottom :  ${p => (p.marginBottom ? p.marginBottom : "0")};
+`;
 
 export default GlobalStyles;
