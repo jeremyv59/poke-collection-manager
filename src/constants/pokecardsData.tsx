@@ -6,7 +6,7 @@ export type PokeCardType = {
 };
 
 // TODO : Replace by TCG API data
-export const expansionsData: PokeCardType[] = [
+export const pokecardsData: PokeCardType[] = [
   {
     id: 1,
     pokeName: "Sulfura",

@@ -1,5 +1,4 @@
 import {
-  CardName,
   ContentContainer,
   DescContainer,
   Expansion,
@@ -10,11 +9,7 @@ import {
   ListContainer,
   MainCardContainer,
   MainContainer,
-  PokeCard,
-  PokeImg,
-  PokeImgContainer,
   RightContainer,
-  TextContainer,
   TotalCards,
   TotalCount,
   TotalTitle,
@@ -26,6 +21,8 @@ import { expansionsData } from "../../constants/expansionsData";
 import CustomBtn from "../../components/button/CustomBtn";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { HeadingText, SmallText } from "../../styles/GlobalStyles";
+import { pokecardsData } from "../../constants/pokecardsData";
+import PokeCard from "../../components/pokemon/poke_card/PokeCard";
 
 const Homepage = () => {
   return (
@@ -74,70 +71,16 @@ const Homepage = () => {
           <HeadingText marginBottom={"1.5rem"}>
             Last added in collection
           </HeadingText>
-          <PokeCard>
-            <DescContainer>
-              <PokeImgContainer>
-                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
-              </PokeImgContainer>
-              <TextContainer>
-                <CardName>Sulfura de galar</CardName>
-                <SmallText>Crown & Zenith</SmallText>
-              </TextContainer>
-            </DescContainer>
-            <SmallText>Just now</SmallText>
-          </PokeCard>
-
-          <PokeCard>
-            <DescContainer>
-              <PokeImgContainer>
-                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
-              </PokeImgContainer>
-              <TextContainer>
-                <CardName>Sulfura de galar</CardName>
-                <SmallText>Crown & Zenith</SmallText>
-              </TextContainer>
-            </DescContainer>
-            <SmallText>1hr ago</SmallText>
-          </PokeCard>
-
-          <PokeCard>
-            <DescContainer>
-              <PokeImgContainer>
-                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
-              </PokeImgContainer>
-              <TextContainer>
-                <CardName>Sulfura de galar</CardName>
-                <SmallText>Crown & Zenith</SmallText>
-              </TextContainer>
-            </DescContainer>
-            <SmallText>2hr ago</SmallText>
-          </PokeCard>
-
-          <PokeCard>
-            <DescContainer>
-              <PokeImgContainer>
-                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
-              </PokeImgContainer>
-              <TextContainer>
-                <CardName>Sulfura de galar</CardName>
-                <SmallText>Crown & Zenith</SmallText>
-              </TextContainer>
-            </DescContainer>
-            <SmallText>3hr ago</SmallText>
-          </PokeCard>
-
-          <PokeCard>
-            <DescContainer>
-              <PokeImgContainer>
-                <PokeImg src="https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg"></PokeImg>
-              </PokeImgContainer>
-              <TextContainer>
-                <CardName>Sulfura de galar</CardName>
-                <SmallText>Crown & Zenith</SmallText>
-              </TextContainer>
-            </DescContainer>
-            <SmallText>4hr ago</SmallText>
-          </PokeCard>
+          {pokecardsData.map((pokecard) => {
+            return (
+              <PokeCard
+                imgUrl={pokecard.image_url}
+                cardName={pokecard.pokeName}
+                expansionName={pokecard.expansionName}
+                addedDate="1hr ago"
+              />
+            );
+          })}
         </ContentContainer>
       </RightContainer>
     </HomepageLayout>
