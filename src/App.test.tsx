@@ -3,7 +3,6 @@ import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "@testing-library/react";
 import user from "@testing-library/user-event";
-import userEvent from "@testing-library/user-event";
 
 describe("rendering full app/navigating", () => {
   render(<App />);
