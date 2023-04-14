@@ -7,7 +7,6 @@ export const CustomHeader = styled.div`
   padding: 1rem;
   display: flex;
   justify-content:space-between;
-  width: 100%;
   align-items: center;
   color: white;
   background: ${({ theme }) => theme.colors.darkSecondary};
@@ -30,12 +29,6 @@ export const HeaderTitle = styled.h1`
   font-weight: 600;
   line-height: 40px;
 `;
-
-// export const HeaderTxt = styled.small`
-//   font-size: 112.5%;
-//   color: ${({ theme }) => theme.colors.gray};
-//   line-height: 25px;
-// `;
 
 export const OptionsContainer = styled.div`
   display: none;
