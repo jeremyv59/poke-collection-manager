@@ -1,6 +1,6 @@
 import { AiOutlineHome, AiOutlineBook } from "react-icons/ai";
 import { CgCardHearts } from "react-icons/cg";
-import { HiOutlineBuildingStorefront } from "react-icons/hi2";
+import { BiExpand } from "react-icons/bi";
 
 type MenuItemType = {
   label: string;
@@ -14,6 +14,12 @@ export const items: MenuItemType[] = [
     key: "/",
     icon: <AiOutlineHome />,
   },
+
+  {
+    label: "Expansions",
+    key: "/expansions",
+    icon: <BiExpand />,
+  },
   {
     label: "Collection",
     key: "/collection",
@@ -23,10 +29,5 @@ export const items: MenuItemType[] = [
     label: "Cards",
     key: "/cards",
     icon: <CgCardHearts />,
-  },
-  {
-    label: "Marketplace",
-    key: "/marketplace",
-    icon: <HiOutlineBuildingStorefront />,
   },
 ];

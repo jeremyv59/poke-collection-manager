@@ -1,7 +1,7 @@
 import { routerType } from "../types/router.types";
 import Collection from "./collection/Collection";
 import Cards from "./cards/Cards";
-import Marketplace from "./marketplace/Marketplace";
+import Expansion from "./expansion/Expansion";
 import Homepage from "./Homepage/homepage";
 
 const pagesData: routerType[] = [
@@ -15,15 +15,16 @@ const pagesData: routerType[] = [
     element: <Collection />,
     title: "collection",
   },
+
+  {
+    path: "/expansions",
+    element: <Expansion />,
+    title: "expansions",
+  },
   {
     path: "/cards",
     element: <Cards />,
     title: "cards",
-  },
-  {
-    path: "/marketplace",
-    element: <Marketplace />,
-    title: "marketplace",
   },
 ];
 
