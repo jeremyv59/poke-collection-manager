@@ -42,11 +42,4 @@ export const pokecardsData: PokeCardType[] = [
     image_url:
       "https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg",
   },
-  {
-    id: 6,
-    pokeName: "Sulfura",
-    expansionName: "Astral Radiance",
-    image_url:
-      "https://static.tcgcollector.com/content/images/0f/92/b3/0f92b3895160814220958def7b08276a88204f1bd55e0f34e0e89355bded0273.jpg",
-  },
 ];
