@@ -18,6 +18,7 @@ const ExpansionsList: React.FC<ListProps> = ({ listTitle, data }) => {
           return (
             <ListItem
               key={expansion.id}
+              id={expansion.id}
               expansionName={expansion.expansionName}
               imageSrc={expansion.image_url}
               releaseDate={expansion.releaseDate}
