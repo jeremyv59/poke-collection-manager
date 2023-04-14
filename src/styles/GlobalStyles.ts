@@ -1,5 +1,6 @@
 import styled, { CSSProperties, createGlobalStyle } from "styled-components";
 import { ThemeType } from "./Theme";
+import { device } from "./Breakpoints";
 
 const GlobalStyles = createGlobalStyle<ThemeType>`
   * {
@@ -14,11 +15,21 @@ const GlobalStyles = createGlobalStyle<ThemeType>`
   }
 
   body {
-    background-color:${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.white};
   }
 `;
 
 // GLOBAL COMPONENTS
+export const PageLayout = styled.div`
+  width: 100%;
+  position : relative;
+  background: ${({ theme }) => theme.colors.darkSecondary};
+
+  @media ${device.tablet} {
+    padding-top: 100px;
+  }
+`;
+
 export const HeadingText = styled.h4<CSSProperties>`
   color: ${p => (p.color ? p.color : "white")};
   font-size: ${p => (p.fontSize ? p.fontSize : "1.5rem")};

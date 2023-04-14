@@ -15,13 +15,13 @@ describe("rendering full app/navigating", () => {
     expect(screen.getByTestId("expansions-list")).toBeInTheDocument();
 
     const navItem = screen.getByRole("menuitem", {
-      name: /marketplace/i,
+      name: /expansions/i,
     });
 
     // eslint-disable-next-line testing-library/no-wait-for-side-effects
     await waitFor(() => user.click(navItem));
 
-    const pageTitle = await screen.findByTestId("marketplace-txt");
+    const pageTitle = await screen.findByTestId("expansion-txt");
     expect(pageTitle).toBeInTheDocument();
   });
 });

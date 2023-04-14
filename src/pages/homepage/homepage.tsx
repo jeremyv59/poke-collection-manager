@@ -27,7 +27,12 @@ import PokeCard from "../../components/pokemon/poke_card/PokeCard";
 const Homepage = () => {
   return (
     <HomepageLayout>
-      <Header />
+      <Header
+        title="Home"
+        subTitle="Hello Jérémy, welcome back !"
+        userName="Jérémy"
+        userDesc="User"
+      />
       <MainContainer>
         <MainCardContainer data-testid="main-card">
           <CustomCard expansionTitle="Scarlet & Violet" />

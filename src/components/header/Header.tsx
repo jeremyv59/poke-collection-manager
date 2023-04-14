@@ -13,13 +13,20 @@ import { FiSettings } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { SmallText } from "../../styles/GlobalStyles";
 
-const Header = () => {
+type HeaderProps = {
+  title: string;
+  subTitle: string;
+  userName: string;
+  userDesc: string;
+};
+
+const Header = ({ title, subTitle, userName, userDesc }: HeaderProps) => {
   return (
     <CustomHeader>
       <div>
-        <HeaderTitle>Home</HeaderTitle>
+        <HeaderTitle>{title}</HeaderTitle>
         <SmallText fontSize={"1.125rem"} fontWeight={500}>
-          Hello Jérémy, welcome back !
+          {subTitle}
         </SmallText>
       </div>
       <OptionsContainer>
@@ -31,8 +38,8 @@ const Header = () => {
         </IconContainer>
         <UserContainer>
           <UserDescContainer>
-            <UserName>Jérémy Vaneste</UserName>
-            <SmallText fontWeight={400}>User</SmallText>
+            <UserName>{userName}</UserName>
+            <SmallText fontWeight={400}>{userDesc}</SmallText>
           </UserDescContainer>
           <ProfileIcon />
         </UserContainer>

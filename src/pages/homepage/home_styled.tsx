@@ -57,6 +57,7 @@ export const RightContainer = styled.div`
 export const ContentContainer = styled.div`
   padding: 0rem 2rem;
   margin: 1rem 0rem;
+  // background: yellow;
 `;
 
 export const TotalCards = styled.div`

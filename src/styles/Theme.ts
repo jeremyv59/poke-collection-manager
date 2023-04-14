@@ -11,6 +11,12 @@ export const theme = {
     darkSecondary : "#1e2235",
     white: "#ffffff",
     success: "#66A15A",
+
+    secondary : {
+      orange :"#F96767",
+      yellow : "#F9B035",
+      lightBlue : "#4EB7F2"
+    }
   },
   transition: "all 250ms ease-in",
 };

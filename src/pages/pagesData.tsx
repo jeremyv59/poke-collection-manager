@@ -2,7 +2,7 @@ import { routerType } from "../types/router.types";
 import Collection from "./collection/Collection";
 import Cards from "./cards/Cards";
 import Expansion from "./expansion/Expansion";
-import Homepage from "./Homepage/homepage";
+import Homepage from "./homepage/Homepage";
 
 const pagesData: routerType[] = [
   {
