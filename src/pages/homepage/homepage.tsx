@@ -74,6 +74,7 @@ const Homepage = () => {
           {pokecardsData.map((pokecard) => {
             return (
               <PokeCard
+                key={pokecard.id}
                 imgUrl={pokecard.image_url}
                 cardName={pokecard.pokeName}
                 expansionName={pokecard.expansionName}
